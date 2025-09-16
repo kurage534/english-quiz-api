@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英単語テスト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>英単語テスト</h1>
+        <div id="settings">
+            <label for="startNum">出題範囲（番号）：</label>
+            <input type="number" id="startNum" min="1" required>
+            <label for="endNum">〜</label>
+            <input type="number" id="endNum" min="1" required>
+            <label for="questionCount">出題数：</label>
+            <input type="number" id="questionCount" min="1" required>
+            <button id="startButton">開始</button>
+            <button id="showRankingButton" type="button">ランキングを見る</button>
+        </div>
+        <div id="quiz" class="hidden">
+            <h2 id="question"></h2>
+            <div id="options"></div>
+            <button id="nextButton" class="hidden">次の問題</button>
+            <div id="result" class="hidden"></div>
+        </div>
+        <button id="backButton" class="hidden">戻る</button>
+        <div id="ranking" class="hidden">
+            <h2>ランキング</h2>
+            <div>
+                <label for="rankingQuestionCount">出題数で絞り込み：</label>
+                <input type="number" id="rankingQuestionCount" min="1">
+                <button id="filterRankingButton" type="button">表示</button>
+            </div>
+            <ul id="rankingList"></ul>
+            <button id="closeRankingButton" type="button">閉じる</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
