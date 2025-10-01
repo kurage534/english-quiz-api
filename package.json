@@ -1,0 +1,15 @@
+{
+  "name": "english-quiz-api",
+  "version": "1.0.0",
+  "description": "英単語クイズ ランキングAPIサーバー",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "exceljs": "^4.3.0",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0"
+  }
+}
